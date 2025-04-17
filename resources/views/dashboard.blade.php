@@ -26,7 +26,9 @@
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $province->name }}</td>
                             <td>{{ $province->code }}</td>
-                            <td></td>
+                            <td>
+                                <a href="{{ route('province.show', $province->slug) }}" class="btn btn-sm btn-secondary">Show</a>
+                            </td>
                         </tr>
                     @endforeach
                     </tbody>

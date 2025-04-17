@@ -64,6 +64,7 @@ class ProvinceController extends Controller
 
     public function show(Province $province): View
     {
+        $province->load('cities');
         return \view('province.show', compact('province'));
     }
 }
