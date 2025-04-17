@@ -56,6 +56,7 @@ class CreateSchoolJob implements ShouldQueue
                         ->firstOrNew();
                     $school->npsn = $npsn;
                     $school->name = $name;
+                    $school->district_id = $this->district->id;
                     $school->form_of_education_id = $formOfEducation->id;
                     $school->street = $street;
                     $school->village = $village;
