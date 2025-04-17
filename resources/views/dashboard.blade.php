@@ -32,6 +32,12 @@
                     </tbody>
                 </table>
             </div>
+
+            <hr>
+            <form action="{{ route('city.store') }}" method="post">
+                @csrf
+                <button type="submit" class="btn btn-primary">Generate Cities</button>
+            </form>
         </div>
     </div>
 @endsection

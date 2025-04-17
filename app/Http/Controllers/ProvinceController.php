@@ -44,11 +44,6 @@ class ProvinceController extends Controller
                         }
                     }
 
-                    /*$data[] = [
-                        'name' => $provinsi,
-                        'link' => $href,
-                        'code' => $code,
-                    ];*/
                     $province = Province::filterByCode($code)
                         ->firstOrNew();
                     $province->name = $name;

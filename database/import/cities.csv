@@ -1,0 +1,527 @@
+code;name;province_id;url
+010100;Kepulauan Seribu;1;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/010100/1
+016000;Jakarta Pusat;1;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/016000/1
+016100;Jakarta Utara;1;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/016100/1
+016200;Jakarta Barat;1;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/016200/1
+016300;Jakarta Selatan;1;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/016300/1
+016400;Jakarta Timur;1;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/016400/1
+020500;Bogor;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/020500/1
+020600;Sukabumi;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/020600/1
+020700;Cianjur;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/020700/1
+020800;Bandung;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/020800/1
+021000;Sumedang;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/021000/1
+021100;Garut;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/021100/1
+021200;Tasikmalaya;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/021200/1
+021400;Ciamis;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/021400/1
+021500;Kuningan;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/021500/1
+021600;Majalengka;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/021600/1
+021700;Cirebon;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/021700/1
+021800;Indramayu;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/021800/1
+021900;Subang;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/021900/1
+022000;Purwakarta;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/022000/1
+022100;Karawang;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/022100/1
+022200;Bekasi;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/022200/1
+022300;Bandung Barat;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/022300/1
+022500;Pangandaran;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/022500/1
+026000;Bandung;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/026000/1
+026100;Bogor;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/026100/1
+026200;Sukabumi;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/026200/1
+026300;Cirebon;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/026300/1
+026500;Bekasi;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/026500/1
+026600;Depok;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/026600/1
+026700;Cimahi;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/026700/1
+026800;Tasikmalaya;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/026800/1
+026900;Banjar;2;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/026900/1
+030100;Cilacap;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/030100/1
+030200;Banyumas;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/030200/1
+030300;Purbalingga;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/030300/1
+030400;Banjarnegara;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/030400/1
+030500;Kebumen;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/030500/1
+030600;Purworejo;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/030600/1
+030700;Wonosobo;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/030700/1
+030800;Magelang;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/030800/1
+030900;Boyolali;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/030900/1
+031000;Klaten;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/031000/1
+031100;Sukoharjo;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/031100/1
+031200;Wonogiri;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/031200/1
+031300;Karanganyar;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/031300/1
+031400;Sragen;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/031400/1
+031500;Grobogan;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/031500/1
+031600;Blora;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/031600/1
+031700;Rembang;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/031700/1
+031800;Pati;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/031800/1
+031900;Kudus;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/031900/1
+032000;Jepara;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/032000/1
+032100;Demak;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/032100/1
+032200;Semarang;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/032200/1
+032300;Temanggung;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/032300/1
+032400;Kendal;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/032400/1
+032500;Batang;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/032500/1
+032600;Pekalongan;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/032600/1
+032700;Pemalang;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/032700/1
+032800;Tegal;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/032800/1
+032900;Brebes;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/032900/1
+036000;Magelang;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/036000/1
+036100;Surakarta;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/036100/1
+036200;Salatiga;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/036200/1
+036300;Semarang;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/036300/1
+036400;Pekalongan;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/036400/1
+036500;Tegal;3;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/036500/1
+040100;Bantul;4;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/040100/1
+040200;Sleman;4;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/040200/1
+040300;Gunung Kidul;4;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/040300/1
+040400;Kulon Progo;4;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/040400/1
+046000;Yogyakarta;4;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/046000/1
+050100;Gresik;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/050100/1
+050200;Sidoarjo;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/050200/1
+050300;Mojokerto;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/050300/1
+050400;Jombang;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/050400/1
+050500;Bojonegoro;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/050500/1
+050600;Tuban;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/050600/1
+050700;Lamongan;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/050700/1
+050800;Madiun;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/050800/1
+050900;Ngawi;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/050900/1
+051000;Magetan;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/051000/1
+051100;Ponorogo;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/051100/1
+051200;Pacitan;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/051200/1
+051300;Kediri;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/051300/1
+051400;Nganjuk;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/051400/1
+051500;Blitar;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/051500/1
+051600;Tulungagung;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/051600/1
+051700;Trenggalek;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/051700/1
+051800;Malang;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/051800/1
+051900;Pasuruan;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/051900/1
+052000;Probolinggo;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/052000/1
+052100;Lumajang;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/052100/1
+052200;Bondowoso;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/052200/1
+052300;Situbondo;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/052300/1
+052400;Jember;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/052400/1
+052500;Banyuwangi;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/052500/1
+052600;Pamekasan;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/052600/1
+052700;Sampang;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/052700/1
+052800;Sumenep;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/052800/1
+052900;Bangkalan;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/052900/1
+056000;Surabaya;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/056000/1
+056100;Malang;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/056100/1
+056200;Madiun;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/056200/1
+056300;Kediri;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/056300/1
+056400;Mojokerto;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/056400/1
+056500;Blitar;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/056500/1
+056600;Pasuruan;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/056600/1
+056700;Probolinggo;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/056700/1
+056800;Batu;5;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/056800/1
+060100;Aceh Besar;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/060100/1
+060200;Pidie;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/060200/1
+060300;Aceh Utara;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/060300/1
+060400;Aceh Timur;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/060400/1
+060500;Aceh Tengah;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/060500/1
+060600;Aceh Barat;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/060600/1
+060700;Aceh Selatan;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/060700/1
+060800;Aceh Tenggara;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/060800/1
+061100;Simeulue;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/061100/1
+061200;Bireuen;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/061200/1
+061300;Aceh Singkil;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/061300/1
+061400;Aceh Tamiang;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/061400/1
+061500;Nagan Raya;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/061500/1
+061600;Aceh Jaya;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/061600/1
+061700;Aceh Barat Daya;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/061700/1
+061800;Gayo Lues;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/061800/1
+061900;Bener Meriah;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/061900/1
+062000;Pidie Jaya;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/062000/1
+066000;Sabang;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/066000/1
+066100;Banda Aceh;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/066100/1
+066200;Lhokseumawe;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/066200/1
+066300;Langsa;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/066300/1
+066400;Subulussalam;6;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/066400/1
+070100;Deli Serdang;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/070100/1
+070200;Langkat;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/070200/1
+070300;Karo;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/070300/1
+070400;Simalungun;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/070400/1
+070500;Dairi;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/070500/1
+070600;Asahan;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/070600/1
+070700;Labuhan Batu;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/070700/1
+070800;Tapanuli Utara;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/070800/1
+070900;Tapanuli Tengah;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/070900/1
+071000;Tapanuli Selatan;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/071000/1
+071100;Nias;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/071100/1
+071500;Mandailing Natal;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/071500/1
+071600;Toba;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/071600/1
+071700;Nias Selatan;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/071700/1
+071800;Pakpak Bharat;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/071800/1
+071900;Humbang Hasudutan;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/071900/1
+072000;Samosir;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/072000/1
+072100;Serdang Bedagai;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/072100/1
+072200;Batubara;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/072200/1
+072300;Padang Lawas utara;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/072300/1
+072400;Padang Lawas;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/072400/1
+072500;Labuhan Batu Utara;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/072500/1
+072600;Labuhan Batu Selatan;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/072600/1
+072700;Nias Barat;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/072700/1
+072800;Nias Utara;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/072800/1
+076000;Medan;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/076000/1
+076100;Binjai;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/076100/1
+076200;Tebing Tinggi;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/076200/1
+076300;Pematangsiantar;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/076300/1
+076400;Tanjung Balai;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/076400/1
+076500;Sibolga;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/076500/1
+076600;Padang Sidimpuan;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/076600/1
+076700;Gunungsitoli;7;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/076700/1
+080100;Agam;8;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/080100/1
+080200;Pasaman;8;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/080200/1
+080300;Lima Puluh Koto;8;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/080300/1
+080400;Solok;8;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/080400/1
+080500;Padang Pariaman;8;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/080500/1
+080600;Pesisir Selatan;8;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/080600/1
+080700;Tanah Datar;8;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/080700/1
+080800;Sijunjung;8;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/080800/1
+081000;Kepulauan Mentawai;8;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/081000/1
+081100;Solok Selatan;8;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/081100/1
+081200;Dharmasraya;8;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/081200/1
+081300;Pasaman Barat;8;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/081300/1
+086000;Bukittinggi;8;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/086000/1
+086100;Padang;8;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/086100/1
+086200;Padang Panjang;8;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/086200/1
+086300;Sawah Lunto;8;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/086300/1
+086400;Solok;8;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/086400/1
+086500;Payakumbuh;8;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/086500/1
+086600;Pariaman;8;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/086600/1
+090100;Kampar;9;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/090100/1
+090200;Bengkalis;9;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/090200/1
+090400;Indragiri Hulu;9;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/090400/1
+090500;Indragiri Hilir;9;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/090500/1
+090800;Pelalawan;9;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/090800/1
+090900;Rokan Hulu;9;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/090900/1
+091000;Rokan Hilir;9;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/091000/1
+091100;Siak;9;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/091100/1
+091400;Kuantan Singingi;9;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/091400/1
+091500;Kepulauan Meranti;9;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/091500/1
+096000;Pekanbaru;9;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/096000/1
+096200;Dumai;9;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/096200/1
+100100;Batang Hari;10;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/100100/1
+100200;Bungo;10;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/100200/1
+100300;Sarolangun;10;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/100300/1
+100400;Tanjung Jabung Barat;10;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/100400/1
+100500;Kerinci;10;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/100500/1
+100600;Tebo;10;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/100600/1
+100700;Muaro Jambi;10;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/100700/1
+100800;Tanjung Jabung Timur;10;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/100800/1
+100900;Merangin;10;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/100900/1
+106000;Jambi;10;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/106000/1
+106100;Sungai Penuh;10;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/106100/1
+110100;Musi Banyuasin;11;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/110100/1
+110200;Ogan Komering Ilir;11;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/110200/1
+110300;Ogan Komering Ulu;11;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/110300/1
+110400;Muara Enim;11;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/110400/1
+110500;Lahat;11;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/110500/1
+110600;Musi Rawas;11;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/110600/1
+110700;Banyuasin;11;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/110700/1
+110800;Ogan Komering Ulu Timur;11;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/110800/1
+110900;Ogan Komering Ulu Selatan;11;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/110900/1
+111000;Ogan Ilir;11;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/111000/1
+111100;Empat Lawang;11;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/111100/1
+111200;Penukal Abab Lematang Ilir;11;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/111200/1
+111300;Musi Rawas Utara;11;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/111300/1
+116000;Palembang;11;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/116000/1
+116100;Prabumulih;11;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/116100/1
+116200;Lubuk Linggau;11;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/116200/1
+116300;Pagar Alam;11;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/116300/1
+120100;Lampung Selatan;12;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/120100/1
+120200;Lampung Tengah;12;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/120200/1
+120300;Lampung Utara;12;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/120300/1
+120400;Lampung Barat;12;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/120400/1
+120500;Tulang Bawang;12;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/120500/1
+120600;Tanggamus;12;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/120600/1
+120700;Lampung Timur;12;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/120700/1
+120800;Way Kanan;12;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/120800/1
+120900;Pesawaran;12;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/120900/1
+121000;Pringsewu;12;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/121000/1
+121100;Mesuji;12;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/121100/1
+121200;Tulang Bawang Barat;12;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/121200/1
+121300;Pesisir Barat;12;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/121300/1
+126000;Bandar Lampung;12;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/126000/1
+126100;Metro;12;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/126100/1
+130100;Sambas;13;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/130100/1
+130200;Mempawah;13;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/130200/1
+130300;Sanggau;13;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/130300/1
+130400;Sintang;13;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/130400/1
+130500;Kapuas Hulu;13;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/130500/1
+130600;Ketapang;13;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/130600/1
+130800;Bengkayang;13;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/130800/1
+130900;Landak;13;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/130900/1
+131000;Sekadau;13;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/131000/1
+131100;Melawi;13;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/131100/1
+131200;Kayong Utara;13;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/131200/1
+131300;Kuburaya;13;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/131300/1
+136000;Pontianak;13;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/136000/1
+136100;Singkawang;13;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/136100/1
+140100;Kapuas;14;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/140100/1
+140200;Barito Selatan;14;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/140200/1
+140300;Barito Utara;14;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/140300/1
+140400;Kotawaringin Timur;14;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/140400/1
+140500;Kotawaringin Barat;14;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/140500/1
+140600;Katingan;14;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/140600/1
+140700;Seruyan;14;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/140700/1
+140800;Sukamara;14;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/140800/1
+140900;Lamandau;14;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/140900/1
+141000;Gunung Mas;14;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/141000/1
+141100;Pulang Pisau;14;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/141100/1
+141200;Murung Raya;14;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/141200/1
+141300;Barito Timur;14;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/141300/1
+146000;Palangka Raya;14;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/146000/1
+150100;Banjar;15;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/150100/1
+150200;Tanah Laut;15;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/150200/1
+150300;Barito Kuala;15;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/150300/1
+150400;Tapin;15;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/150400/1
+150500;Hulu Sungai Selatan;15;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/150500/1
+150600;Hulu Sungai Tengah;15;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/150600/1
+150700;Hulu Sungai Utara;15;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/150700/1
+150800;Tabalong;15;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/150800/1
+150900;Kotabaru;15;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/150900/1
+151000;Balangan;15;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/151000/1
+151100;Tanah Bumbu;15;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/151100/1
+156000;Banjarmasin;15;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/156000/1
+156100;Banjarbaru;15;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/156100/1
+160100;Paser;16;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/160100/1
+160200;Kutai Kartanegara;16;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/160200/1
+160300;Berau;16;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/160300/1
+160900;Kutai Barat;16;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/160900/1
+161000;Kutai Timur;16;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/161000/1
+161100;Penajam Paser Utara;16;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/161100/1
+161200;Mahakam Ulu;16;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/161200/1
+166000;Samarinda;16;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/166000/1
+166100;Balikpapan;16;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/166100/1
+166300;Bontang;16;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/166300/1
+170100;Bolaang Mongondow;17;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/170100/1
+170200;Minahasa;17;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/170200/1
+170300;Kep. Sangihe;17;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/170300/1
+170400;Kepulauan Talaud;17;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/170400/1
+170500;Minahasa Selatan;17;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/170500/1
+170600;Minahasa Utara;17;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/170600/1
+170800;Bolaang Mongondow Utara;17;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/170800/1
+170900;Kepulauan Siau Tagulandang Biaro;17;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/170900/1
+171000;Minahasa Tenggara;17;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/171000/1
+171100;Bolaang Mongondow Timur;17;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/171100/1
+171200;Bolaang Mongondow Selatan;17;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/171200/1
+176000;Manado;17;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/176000/1
+176100;Bitung;17;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/176100/1
+176200;Tomohon;17;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/176200/1
+176300;Kotamobagu;17;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/176300/1
+180100;Banggai Kepulauan;18;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/180100/1
+180200;Donggala;18;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/180200/1
+180300;Poso;18;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/180300/1
+180400;Banggai;18;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/180400/1
+180500;Buol;18;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/180500/1
+180600;Tolitoli;18;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/180600/1
+180700;Morowali;18;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/180700/1
+180800;Parigi Moutong;18;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/180800/1
+180900;Tojo Una-Una;18;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/180900/1
+181000;Sigi;18;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/181000/1
+181100;Banggai Laut;18;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/181100/1
+181200;Morowali Utara;18;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/181200/1
+186000;Palu;18;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/186000/1
+190100;Maros;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/190100/1
+190200;Pangkajene Kepulauan;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/190200/1
+190300;Gowa;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/190300/1
+190400;Takalar;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/190400/1
+190500;Jeneponto;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/190500/1
+190600;Barru;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/190600/1
+190700;Bone;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/190700/1
+190800;Wajo;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/190800/1
+190900;Soppeng;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/190900/1
+191000;Bantaeng;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/191000/1
+191100;Bulukumba;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/191100/1
+191200;Sinjai;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/191200/1
+191300;Kepulauan Selayar;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/191300/1
+191400;Pinrang;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/191400/1
+191500;Sidenreng Rappang;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/191500/1
+191600;Enrekang;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/191600/1
+191700;Luwu;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/191700/1
+191800;Tana Toraja;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/191800/1
+192400;Luwu Utara;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/192400/1
+192600;Luwu Timur;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/192600/1
+192700;Toraja Utara;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/192700/1
+196000;Makassar;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/196000/1
+196100;Parepare;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/196100/1
+196200;Palopo;19;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/196200/1
+200100;Konawe;20;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/200100/1
+200200;Muna;20;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/200200/1
+200300;Buton;20;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/200300/1
+200400;Kolaka;20;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/200400/1
+200500;Konawe Selatan;20;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/200500/1
+200600;Wakatobi;20;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/200600/1
+200700;Bombana;20;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/200700/1
+200800;Kolaka Utara;20;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/200800/1
+200900;Konawe Utara;20;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/200900/1
+201000;Buton Utara;20;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/201000/1
+201100;Kolaka Timur;20;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/201100/1
+201200;Konawe Kepulauan;20;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/201200/1
+201300;Muna Barat;20;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/201300/1
+201400;Buton Selatan;20;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/201400/1
+201600;Buton Tengah;20;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/201600/1
+206000;Kendari;20;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/206000/1
+206100;Baubau;20;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/206100/1
+210100;Maluku Tengah;21;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/210100/1
+210200;Maluku Tenggara;21;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/210200/1
+210300;Buru;21;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/210300/1
+210400;Kepulauan Tanimbar;21;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/210400/1
+210500;Seram Bagian Barat;21;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/210500/1
+210600;Seram Bagian Timur;21;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/210600/1
+210700;Kepulauan Aru;21;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/210700/1
+210800;Maluku Barat Daya;21;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/210800/1
+210900;Buru Selatan;21;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/210900/1
+216000;Ambon;21;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/216000/1
+216100;Tual;21;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/216100/1
+220100;Buleleng;22;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/220100/1
+220200;Jembrana;22;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/220200/1
+220300;Tabanan;22;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/220300/1
+220400;Badung;22;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/220400/1
+220500;Gianyar;22;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/220500/1
+220600;Klungkung;22;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/220600/1
+220700;Bangli;22;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/220700/1
+220800;Karang Asem;22;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/220800/1
+226000;Denpasar;22;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/226000/1
+230100;Lombok Barat;23;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/230100/1
+230200;Lombok Tengah;23;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/230200/1
+230300;Lombok Timur;23;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/230300/1
+230400;Sumbawa;23;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/230400/1
+230500;Dompu;23;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/230500/1
+230600;Bima;23;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/230600/1
+230700;Sumbawa Barat;23;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/230700/1
+230800;Lombok Utara;23;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/230800/1
+236000;Mataram;23;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/236000/1
+236100;Bima;23;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/236100/1
+240100;Kupang;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/240100/1
+240300;Timor Tengah Selatan;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/240300/1
+240400;Timor Tengah Utara;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/240400/1
+240500;Belu;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/240500/1
+240600;Alor;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/240600/1
+240700;Flores Timur;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/240700/1
+240800;Sikka;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/240800/1
+240900;Ende;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/240900/1
+241000;Ngada;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/241000/1
+241100;Manggarai;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/241100/1
+241200;Sumba Timur;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/241200/1
+241300;Sumba Barat;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/241300/1
+241400;Lembata;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/241400/1
+241500;Rote-Ndao;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/241500/1
+241600;Manggarai Barat;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/241600/1
+241700;Nagekeo;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/241700/1
+241800;Sumba Tengah;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/241800/1
+241900;Sumba Barat Daya;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/241900/1
+242000;Manggarai Timur;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/242000/1
+242100;Sabu Raijua;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/242100/1
+242200;Malaka;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/242200/1
+246000;Kupang;24;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/246000/1
+250100;Jayapura;25;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/250100/1
+250200;Biak Numfor;25;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/250200/1
+250300;Kepulauan Yapen;25;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/250300/1
+251900;Sarmi;25;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/251900/1
+252000;Keerom;25;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/252000/1
+252600;Waropen;25;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/252600/1
+252700;Supiori;25;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/252700/1
+252800;Memberamo Raya;25;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/252800/1
+256000;Jayapura;25;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/256000/1
+260100;Bengkulu Utara;26;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/260100/1
+260200;Rejang Lebong;26;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/260200/1
+260300;Bengkulu Selatan;26;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/260300/1
+260400;Muko-muko;26;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/260400/1
+260500;Kepahiang;26;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/260500/1
+260600;Lebong;26;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/260600/1
+260700;Kaur;26;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/260700/1
+260800;Seluma;26;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/260800/1
+260900;Bengkulu Tengah;26;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/260900/1
+266000;Bengkulu;26;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/266000/1
+270100;Pulau Taliabu;27;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/270100/1
+270200;Halmahera Tengah;27;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/270200/1
+270300;Halmahera Barat;27;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/270300/1
+270400;halmahera Utara;27;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/270400/1
+270500;Halmahera Selatan;27;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/270500/1
+270600;Halmahera Timur;27;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/270600/1
+270700;Kepulauan Sula;27;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/270700/1
+270800;Kepulauan Morotai;27;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/270800/1
+276000;Ternate;27;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/276000/1
+276100;Tidore Kepulauan;27;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/276100/1
+280100;Pandeglang;28;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/280100/1
+280200;Lebak;28;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/280200/1
+280300;Tangerang;28;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/280300/1
+280400;Serang;28;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/280400/1
+286000;Cilegon;28;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/286000/1
+286100;Tangerang;28;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/286100/1
+286200;Serang;28;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/286200/1
+286300;Tangerang Selatan;28;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/286300/1
+290100;Bangka;29;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/290100/1
+290200;Belitung;29;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/290200/1
+290300;Bangka Tengah;29;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/290300/1
+290400;Bangka Barat;29;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/290400/1
+290500;Bangka Selatan;29;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/290500/1
+290600;Belitung Timur;29;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/290600/1
+296000;Pangkalpinang;29;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/296000/1
+300100;Boalemo;30;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/300100/1
+300200;Gorontalo;30;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/300200/1
+300300;Pohuwato;30;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/300300/1
+300400;Bone Bolango;30;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/300400/1
+300500;Gorontalo Utara;30;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/300500/1
+306000;Gorontalo;30;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/306000/1
+310100;Bintan;31;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/310100/1
+310200;Karimun;31;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/310200/1
+310300;Natuna;31;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/310300/1
+310400;Lingga;31;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/310400/1
+310500;Kepulauan Anambas;31;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/310500/1
+316000;Batam;31;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/316000/1
+316100;Tanjungpinang;31;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/316100/1
+320100;Fak-Fak;32;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/320100/1
+320200;Kaimana;32;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/320200/1
+320300;Teluk Wondama;32;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/320300/1
+320400;Teluk Bintuni;32;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/320400/1
+320500;Manokwari;32;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/320500/1
+321100;Pegunungan Arfak;32;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/321100/1
+321200;Manokwari Selatan;32;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/321200/1
+330100;Mamuju;33;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/330100/1
+330200;Pasangkayu;33;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/330200/1
+330300;Polewali Mandar;33;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/330300/1
+330400;Mamasa;33;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/330400/1
+330500;Majene;33;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/330500/1
+330600;Mamuju Tengah;33;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/330600/1
+340100;Malinau;34;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/340100/1
+340200;Bulungan;34;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/340200/1
+340300;Tana Tidung;34;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/340300/1
+340500;Nunukan;34;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/340500/1
+346000;Tarakan;34;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/346000/1
+350100;da;35;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/350100/1
+350200;;35;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/350200/1
+350300;;35;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/350300/1
+350400;sia;35;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/350400/1
+350500;ar;35;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/350500/1
+350600;ina;35;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/350600/1
+350800;Saudi;35;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/350800/1
+351000;pura;35;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/351000/1
+351200;and;35;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/351200/1
+351300;n;35;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/351300/1
+351400;;35;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/351400/1
+351500;i Darussalam;35;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/351500/1
+360100;Nabire;36;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/360100/1
+360200;Puncak Jaya;36;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/360200/1
+360300;Paniai;36;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/360300/1
+360400;Mimika;36;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/360400/1
+360500;Puncak;36;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/360500/1
+360600;Dogiyai;36;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/360600/1
+360700;Intan Jaya;36;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/360700/1
+360800;Deiyai;36;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/360800/1
+370100;Merauke;37;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/370100/1
+370200;Boven Digoel;37;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/370200/1
+370300;Mappi;37;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/370300/1
+370400;Asmat;37;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/370400/1
+380100;Jayawijaya;38;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/380100/1
+380200;Pegunungan Bintang;38;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/380200/1
+380300;Yahukimo;38;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/380300/1
+380400;Tolikara;38;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/380400/1
+380500;Mamberamo Tengah;38;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/380500/1
+380600;Yalimo;38;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/380600/1
+380700;Lanny Jaya;38;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/380700/1
+380800;Nduga;38;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/380800/1
+390100;Maybrat;39;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/390100/1
+390200;Raja Ampat;39;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/390200/1
+390300;Sorong Selatan;39;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/390300/1
+390400;Sorong;39;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/390400/1
+390500;Tambrauw;39;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/390500/1
+390600;Sorong;39;https://referensi.data.kemdikbud.go.id/pendidikan/dikdas/390600/1
