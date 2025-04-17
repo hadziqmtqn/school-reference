@@ -45,7 +45,7 @@
 
             @if($city->districts->count() > 0)
                 <hr>
-                <form action="{{ route('school.store') }}" method="post">
+                <form action="{{ route('school.store-all') }}" method="post">
                     @csrf
                     <button type="submit" class="btn btn-primary">Generate All School By Districts</button>
                 </form>
