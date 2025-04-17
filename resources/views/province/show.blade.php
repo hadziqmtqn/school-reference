@@ -18,6 +18,7 @@
                         <th>#</th>
                         <th>Name</th>
                         <th>Code</th>
+                        <th>Total District</th>
                         <th>Action</th>
                     </tr>
                     </thead>
@@ -27,6 +28,7 @@
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $city->name }}</td>
                             <td>{{ $city->code }}</td>
+                            <th>{{ $city->districts->count() }}</th>
                             <td>
                                 <a href="{{ route('city.show', $city->code) }}" class="btn btn-sm btn-secondary">Show</a>
                             </td>
