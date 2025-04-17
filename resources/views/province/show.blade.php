@@ -36,11 +36,13 @@
                 </table>
             </div>
 
-            <hr>
-            <form action="#" method="post">
-                @csrf
-                <button type="submit" class="btn btn-primary">Generate Cities</button>
-            </form>
+            @if($province->cities->count() > 0)
+                <hr>
+                <form action="#" method="post">
+                    @csrf
+                    <button type="submit" class="btn btn-primary">Generate Districts</button>
+                </form>
+            @endif
         </div>
     </div>
 @endsection

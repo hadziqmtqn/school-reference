@@ -12,6 +12,10 @@ Route::get('/', function () {
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
 Route::group(['prefix' => 'province'], function () {
     Route::post('/store', [ProvinceController::class, 'store'])->name('province.store');
-    Route::get('/{province:slug}', [ProvinceController::class, 'show'])->name('province.show');
+    Route::get('/{province:code}', [ProvinceController::class, 'show'])->name('province.show');
 });
-Route::post('city/store', [CityController::class, 'store'])->name('city.store');
+
+Route::group(['prefix' => 'city'], function () {
+    Route::post('/store', [CityController::class, 'store'])->name('city.store');
+    Route::get('/{city:code}', [CityController::class, 'show'])->name('city.show');
+});

@@ -27,7 +27,7 @@
                             <td>{{ $province->name }}</td>
                             <td>{{ $province->code }}</td>
                             <td>
-                                <a href="{{ route('province.show', $province->slug) }}" class="btn btn-sm btn-secondary">Show</a>
+                                <a href="{{ route('province.show', $province->code) }}" class="btn btn-sm btn-secondary">Show</a>
                             </td>
                         </tr>
                     @endforeach
@@ -35,11 +35,13 @@
                 </table>
             </div>
 
-            <hr>
-            <form action="{{ route('city.store') }}" method="post">
-                @csrf
-                <button type="submit" class="btn btn-primary">Generate Cities</button>
-            </form>
+            @if($provinces->count() > 0)
+                <hr>
+                <form action="{{ route('city.store') }}" method="post">
+                    @csrf
+                    <button type="submit" class="btn btn-primary">Generate Cities</button>
+                </form>
+            @endif
         </div>
     </div>
 @endsection
