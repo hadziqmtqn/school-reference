@@ -19,7 +19,7 @@ class DistrictController extends Controller
                 CreateDistrictJob::dispatch($city);
             }
 
-            return redirect()->back('success', 'Data berhasil diproses');
+            return redirect()->back()->with('success', 'Data berhasil diproses');
         } catch (Exception $exception) {
             Log::error($exception->getMessage());
             return redirect()->back()->with('error', 'Data gagal disimpan!');
