@@ -7,11 +7,12 @@ use App\Models\City;
 use App\Models\District;
 use App\Models\School;
 use Exception;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 
 class SchoolController extends Controller
 {
-    public function store(City $city)
+    public function store(Request $request, City $city)
     {
         try {
             $districts = District::whereHas('city', fn($query) => $query->filterByCode($city->code))
