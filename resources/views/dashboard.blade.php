@@ -1,8 +1,37 @@
 @extends('master')
 @section('contents')
-    <div class="bg-body-tertiary p-5 rounded">
-        <h1>Navbar example</h1>
-        <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser’s viewport.</p>
-        <a class="btn btn-lg btn-primary" href="#" role="button">View navbar docs &raquo;</a>
+    <div class="card">
+        <div class="card-header d-flex justify-content-between">
+            <h5>Province</h5>
+            <form action="{{ route('province.store') }}" method="post">
+                @csrf
+                <button type="submit" class="btn btn-sm btn-primary">Generate Data</button>
+            </form>
+        </div>
+        <div class="card-body">
+            @include('session')
+            <div class="table-responsive">
+                <table class="table table-striped w-100 text-nowrap">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Code</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach($provinces as $province)
+                        <tr>
+                            <td>{{ $loop->iteration }}</td>
+                            <td>{{ $province->name }}</td>
+                            <td>{{ $province->code }}</td>
+                            <td></td>
+                        </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 @endsection

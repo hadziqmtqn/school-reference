@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ProvinceRequest;
 use App\Models\Province;
 use DiDom\Document;
 use Exception;
@@ -15,13 +14,6 @@ use Throwable;
 
 class ProvinceController extends Controller
 {
-    public function index(): View
-    {
-        $provinces = Province::get();
-
-        return \view('province', compact('provinces'));
-    }
-
     /**
      * @throws GuzzleException
      * @throws Throwable
@@ -67,7 +59,7 @@ class ProvinceController extends Controller
             }
 
             DB::commit();
-            return redirect()->back()->with('success', 'Data berhasil diproses');
+            return redirect()->back()->with('success', 'Data berhasil disimpan');
         } catch (Exception $exception) {
             DB::rollBack();
             Log::error($exception->getMessage());
@@ -75,22 +67,8 @@ class ProvinceController extends Controller
         }
     }
 
-    public function show(Province $province)
+    public function show(Province $province): View
     {
-        return $province;
-    }
-
-    public function update(ProvinceRequest $request, Province $province)
-    {
-        $province->update($request->validated());
-
-        return $province;
-    }
-
-    public function destroy(Province $province)
-    {
-        $province->delete();
-
-        return response()->json();
+        return \view('province.show', compact('province'));
     }
 }
