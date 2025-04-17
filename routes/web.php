@@ -27,4 +27,7 @@ Route::group(['prefix' => 'district'], function () {
     Route::get('/{district:code}', [DistrictController::class, 'show'])->name('district.show');
 });
 
-Route::get('school', [SchoolController::class, 'index'])->name('school.index');
+Route::group(['prefix' => 'school'], function () {
+    Route::post('/{city:code}/store', [SchoolController::class, 'store'])->name('school.store');
+    Route::post('/store-all', [SchoolController::class, 'storeAll'])->name('school.store-all');
+});

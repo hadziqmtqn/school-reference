@@ -15,7 +15,12 @@ return new class extends Migration {
             $table->string('street')->nullable();
             $table->string('village')->nullable();
             $table->string('status');
+            $table->unsignedBigInteger('district_id');
+            $table->unsignedBigInteger('form_of_education_id');
             $table->timestamps();
+
+            $table->foreign('district_id')->references('id')->on('districts')->restrictOnDelete();
+            $table->foreign('form_of_education_id')->references('id')->on('form_of_education')->restrictOnDelete();
         });
     }
 

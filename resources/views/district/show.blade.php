@@ -9,7 +9,13 @@
     </nav>
 
     <div class="card">
-        <h5 class="card-header">District</h5>
+        <div class="card-header d-flex justify-content-between">
+            <h5>Ditrict</h5>
+            <form action="{{ route('school.store', $city->code) }}" method="post">
+                @csrf
+                <button type="submit" class="btn btn-sm btn-primary">Create School By District</button>
+            </form>
+        </div>
         <div class="card-body">
             @include('session')
             <div class="table-responsive">
@@ -36,6 +42,14 @@
                     </tbody>
                 </table>
             </div>
+
+            @if($city->districts->count() > 0)
+                <hr>
+                <form action="{{ route('school.store') }}" method="post">
+                    @csrf
+                    <button type="submit" class="btn btn-primary">Generate All School By Districts</button>
+                </form>
+            @endif
         </div>
     </div>
 @endsection
