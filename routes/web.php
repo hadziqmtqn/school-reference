@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CityController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DistrictController;
 use App\Http\Controllers\ProvinceController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,4 +19,9 @@ Route::group(['prefix' => 'province'], function () {
 Route::group(['prefix' => 'city'], function () {
     Route::post('/store', [CityController::class, 'store'])->name('city.store');
     Route::get('/{city:code}', [CityController::class, 'show'])->name('city.show');
+});
+
+Route::group(['prefix' => 'district'], function () {
+    Route::post('/store', [DistrictController::class, 'store'])->name('district.store');
+    Route::get('/{district:code}', [DistrictController::class, 'show'])->name('district.show');
 });

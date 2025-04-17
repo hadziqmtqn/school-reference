@@ -7,6 +7,7 @@ use App\Models\City;
 use App\Models\Province;
 use Exception;
 use Illuminate\Support\Facades\Log;
+use Illuminate\View\View;
 
 class CityController extends Controller
 {
@@ -25,8 +26,10 @@ class CityController extends Controller
         }
     }
 
-    public function show(City $city)
+    public function show(City $city): View
     {
-        return $city;
+        $city->load('districts');
+
+        return \view('district.show', compact('city'));
     }
 }

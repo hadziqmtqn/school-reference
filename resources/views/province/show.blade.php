@@ -28,7 +28,7 @@
                             <td>{{ $city->name }}</td>
                             <td>{{ $city->code }}</td>
                             <td>
-                                <a href="#" class="btn btn-sm btn-secondary">Show</a>
+                                <a href="{{ route('city.show', $city->code) }}" class="btn btn-sm btn-secondary">Show</a>
                             </td>
                         </tr>
                     @endforeach
@@ -38,7 +38,7 @@
 
             @if($province->cities->count() > 0)
                 <hr>
-                <form action="#" method="post">
+                <form action="{{ route('district.store') }}" method="post">
                     @csrf
                     <button type="submit" class="btn btn-primary">Generate Districts</button>
                 </form>
