@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 
@@ -27,5 +28,10 @@ class FormOfEducation extends Model
         static::creating(function (FormOfEducation $formOfEducation) {
             $formOfEducation->slug = Str::uuid()->toString();
         });
+    }
+
+    public function scopeFilterBySlug(Builder $query, $slug): Builder
+    {
+        return $query->where('slug', $slug);
     }
 }

@@ -51,8 +51,8 @@ class SchoolExport implements FromCollection, WithHeadings, WithCustomCsvSetting
                     strtoupper(optional(optional($school->district)->city)->name),
                     strtoupper(optional(optional(optional($school->district)->city)->province)->name),
                     ucfirst(strtolower($school->status)),
-                    '',
-                    ''
+                    null,
+                    1
                 ]);
             });
     }

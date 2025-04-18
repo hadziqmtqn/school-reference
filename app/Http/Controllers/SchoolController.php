@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Exports\SchoolExport;
+use App\Http\Requests\School\ExportRequest;
 use App\Jobs\CreateSchoolJob;
 use App\Models\City;
 use App\Models\District;
+use App\Models\FormOfEducation;
 use Exception;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Str;
 use Maatwebsite\Excel\Facades\Excel;
 
 class SchoolController extends Controller
@@ -29,10 +31,15 @@ class SchoolController extends Controller
         }
     }
 
-    public function export(Request $request, District $district)
+    public function export(ExportRequest $request, District $district)
     {
         try {
-            return Excel::download(new SchoolExport($request, $district->code), 'schools.csv');
+            $formOfEducation = $request->input('form-of-edu') != 'all' ? FormOfEducation::filterBySlug($request->input('form-of-edu'))
+                ->first()
+                ->name : null;
+            $fileName = Str::slug('school-data-' . $district->name  . ($formOfEducation ? '-' . $formOfEducation : null));
+
+            return Excel::download(new SchoolExport($request, $district->code),  $fileName . '.csv');
         } catch (Exception $exception) {
             Log::error($exception->getMessage());
             return redirect()->back()->with('error', 'Data gagal diunduh');
