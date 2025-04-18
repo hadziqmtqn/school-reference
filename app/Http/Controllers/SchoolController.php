@@ -34,10 +34,11 @@ class SchoolController extends Controller
     public function export(ExportRequest $request, District $district)
     {
         try {
+            $district->load('city.province');
             $formOfEducation = $request->input('form-of-edu') != 'all' ? FormOfEducation::filterBySlug($request->input('form-of-edu'))
                 ->first()
                 ->name : null;
-            $fileName = Str::slug('school-data-' . $district->name  . ($formOfEducation ? '-' . $formOfEducation : null));
+            $fileName = Str::slug('school-data-' . '-' . optional(optional($district->city)->province)->name . '-' . optional($district->city)->name . '-' . $district->name  . ($formOfEducation ? '-' . $formOfEducation : null));
 
             return Excel::download(new SchoolExport($request, $district->code),  $fileName . '.csv');
         } catch (Exception $exception) {
