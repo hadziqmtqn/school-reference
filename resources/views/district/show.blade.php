@@ -3,19 +3,14 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{ route('dashboard.index') }}">Dashboard</a></li>
-            <li class="breadcrumb-item"><a href="{{ route('province.show', optional($city->province)->code) }}">Prov. {{ optional($city->province)->name }}</a></li>
-            <li class="breadcrumb-item active" aria-current="page">{{ $city->name }}</li>
+            <li class="breadcrumb-item"><a href="{{ route('province.show', optional(optional($district->city)->province)->code) }}">Prov. {{ optional(optional($district->city)->province)->name }}</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('city.show', optional($district->city)->code) }}">{{ optional($district->city)->name }}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ $district->name }}</li>
         </ol>
     </nav>
 
     <div class="card">
-        <div class="card-header d-flex justify-content-between">
-            <h5>Ditrict</h5>
-            <form action="{{ route('school.store', $city->code) }}" method="post">
-                @csrf
-                <button type="submit" class="btn btn-sm btn-primary">Create School By District</button>
-            </form>
-        </div>
+        <h5 class="card-header">District</h5>
         <div class="card-body">
             @include('session')
             <div class="table-responsive">
@@ -24,32 +19,26 @@
                     <tr>
                         <th>#</th>
                         <th>Name</th>
-                        <th>Code</th>
-                        <th>Action</th>
+                        <th>NPSM</th>
+                        <th>Address</th>
+                        <th>Village</th>
+                        <th>Status</th>
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach($city->districts as $district)
+                    @foreach($district->schools as $school)
                         <tr>
                             <td>{{ $loop->iteration }}</td>
-                            <td>{{ $district->name }}</td>
-                            <td>{{ $district->code }}</td>
-                            <td>
-                                <a href="#" class="btn btn-sm btn-secondary">Show</a>
-                            </td>
+                            <td>{{ $school->name }}</td>
+                            <td><a href="{{ url('https://referensi.data.kemdikbud.go.id/pendidikan/npsn/' . $school->npsn) }}" target="_blank">{{ $school->npsn }}</a></td>
+                            <td>{{ $school->street }}</td>
+                            <td>{{ $school->village }}</td>
+                            <td>{{ $school->status }}</td>
                         </tr>
                     @endforeach
                     </tbody>
                 </table>
             </div>
-
-            @if($city->districts->count() > 0)
-                <hr>
-                <form action="{{ route('school.store-all') }}" method="post">
-                    @csrf
-                    <button type="submit" class="btn btn-primary">Generate All School By Districts</button>
-                </form>
-            @endif
         </div>
     </div>
 @endsection

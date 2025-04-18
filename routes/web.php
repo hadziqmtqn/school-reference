@@ -23,11 +23,10 @@ Route::group(['prefix' => 'city'], function () {
 });
 
 Route::group(['prefix' => 'district'], function () {
-    Route::post('/store', [DistrictController::class, 'store'])->name('district.store');
+    Route::post('/{province:code}/store', [DistrictController::class, 'store'])->name('district.store');
     Route::get('/{district:code}', [DistrictController::class, 'show'])->name('district.show');
 });
 
 Route::group(['prefix' => 'school'], function () {
     Route::post('/{city:code}/store', [SchoolController::class, 'store'])->name('school.store');
-    Route::post('/store-all', [SchoolController::class, 'storeAll'])->name('school.store-all');
 });

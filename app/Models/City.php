@@ -49,4 +49,9 @@ class City extends Model
     {
         return $query->where('code', $code);
     }
+
+    public function scopeProvinceId(Builder $query, $provinceId): Builder
+    {
+        return $query->where('province_id', $provinceId);
+    }
 }

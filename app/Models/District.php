@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Str;
 
 class District extends Model
@@ -36,6 +37,17 @@ class District extends Model
     public function city(): BelongsTo
     {
         return $this->belongsTo(City::class);
+    }
+
+    public function schools(): HasMany
+    {
+        return $this->hasMany(School::class, 'district_id');
+    }
+
+    public function totalSchools(): int
+    {
+        return $this->schools()
+            ->count();
     }
 
     // TODO Scope

@@ -30,6 +30,6 @@ class CityController extends Controller
     {
         $city->load('districts');
 
-        return \view('district.show', compact('city'));
+        return \view('city.show', compact('city'));
     }
 }

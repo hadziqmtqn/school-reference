@@ -5,15 +5,18 @@ namespace App\Http\Controllers;
 use App\Jobs\CreateDistrictJob;
 use App\Models\City;
 use App\Models\District;
+use App\Models\Province;
 use Exception;
 use Illuminate\Support\Facades\Log;
+use Illuminate\View\View;
 
 class DistrictController extends Controller
 {
-    public function store()
+    public function store(Province $province)
     {
         try {
-            $cities = City::get();
+            $cities = City::provinceId($province->id)
+                ->get();
 
             foreach ($cities as $city) {
                 CreateDistrictJob::dispatch($city);
@@ -26,8 +29,10 @@ class DistrictController extends Controller
         }
     }
 
-    public function show(District $district)
+    public function show(District $district): View
     {
-        return $district;
+        $district->load('city');
+
+        return \view('district.show', compact('district'));
     }
 }
