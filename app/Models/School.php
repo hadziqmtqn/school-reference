@@ -51,4 +51,19 @@ class School extends Model
     {
         return $query->where('npsn', $npsn);
     }
+
+    public function scopeFilterData(Builder $query, $request): Builder
+    {
+        $search = $request['search'] ?? null;
+        $formOfEducation = $request['form-of-edu'] ?? null;
+
+        return $query->when($search, function ($query) use ($search) {
+            $query->whereAny(['name', 'npsn'], 'LIKE', '%' . $search . '%');
+        })
+                ->when($formOfEducation && ($formOfEducation != 'all'), function ($query) use ($formOfEducation) {
+                $query->whereHas('formOfEducation', function ($query) use ($formOfEducation) {
+                    $query->where('slug', $formOfEducation);
+                });
+            });
+    }
 }

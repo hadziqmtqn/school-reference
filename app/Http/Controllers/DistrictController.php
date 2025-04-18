@@ -5,8 +5,10 @@ namespace App\Http\Controllers;
 use App\Jobs\CreateDistrictJob;
 use App\Models\City;
 use App\Models\District;
+use App\Models\FormOfEducation;
 use App\Models\Province;
 use Exception;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\View\View;
 
@@ -29,10 +31,18 @@ class DistrictController extends Controller
         }
     }
 
-    public function show(District $district): View
+    public function show(Request $request, District $district): View
     {
-        $district->load('city');
+        $district->load([
+            'city',
+            'schools' => function ($query) use ($request) {
+                $query->filterData($request);
+            },
+            'schools.formOfEducation',
+            'schools.district.city.province'
+        ]);
+        $formOfEducation = FormOfEducation::get();
 
-        return \view('district.show', compact('district'));
+        return \view('district.show', compact('district', 'formOfEducation'));
     }
 }
