@@ -50,6 +50,9 @@ class SchoolExport implements FromCollection, WithHeadings, WithCustomCsvSetting
                     strtoupper(optional($school->district)->name),
                     strtoupper(optional(optional($school->district)->city)->name),
                     strtoupper(optional(optional(optional($school->district)->city)->province)->name),
+                    ucfirst(strtolower($school->status)),
+                    '',
+                    ''
                 ]);
             });
     }
@@ -66,7 +69,10 @@ class SchoolExport implements FromCollection, WithHeadings, WithCustomCsvSetting
             'village',
             'district',
             'city',
-            'province'
+            'province',
+            'status',
+            'postal_code',
+            'is_active'
         ];
     }
 
