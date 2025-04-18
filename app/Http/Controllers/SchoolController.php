@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\SchoolExport;
 use App\Jobs\CreateSchoolJob;
 use App\Models\City;
 use App\Models\District;
-use App\Models\School;
 use Exception;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Maatwebsite\Excel\Facades\Excel;
 
 class SchoolController extends Controller
 {
@@ -24,6 +26,16 @@ class SchoolController extends Controller
         } catch (Exception $exception) {
             Log::error($exception->getMessage());
             return redirect()->back()->with('error', 'Data gagal disimpan');
+        }
+    }
+
+    public function export(Request $request, District $district)
+    {
+        try {
+            return Excel::download(new SchoolExport($request, $district->code), 'schools.csv');
+        } catch (Exception $exception) {
+            Log::error($exception->getMessage());
+            return redirect()->back()->with('error', 'Data gagal diunduh');
         }
     }
 }

@@ -29,4 +29,5 @@ Route::group(['prefix' => 'district'], function () {
 
 Route::group(['prefix' => 'school'], function () {
     Route::post('/{city:code}/store', [SchoolController::class, 'store'])->name('school.store');
+    Route::post('/export/data/{district:code}', [SchoolController::class, 'export'])->name('school.export');
 });
