@@ -54,4 +54,12 @@ class City extends Model
     {
         return $query->where('province_id', $provinceId);
     }
+
+    public function scopeFilterData(Builder $query, $request): Builder
+    {
+        $search = $request['search'] ?? null;
+
+        return $query->when($search, fn($query) => $query->whereLike('name', "%$search%"))
+            ->whereHas('province', fn($query) => $query->where('code', $request['province_code']));
+    }
 }
