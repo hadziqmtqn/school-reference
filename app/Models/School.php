@@ -56,14 +56,16 @@ class School extends Model
     {
         $search = $request['search'] ?? null;
         $formOfEducation = $request['form-of-edu'] ?? null;
+        $districtCode = $request['district_code'] ?? null;
 
         return $query->when($search, function ($query) use ($search) {
             $query->whereAny(['name', 'npsn'], 'LIKE', '%' . $search . '%');
         })
-                ->when($formOfEducation && ($formOfEducation != 'all'), function ($query) use ($formOfEducation) {
+            ->when($formOfEducation && ($formOfEducation != 'all'), function ($query) use ($formOfEducation) {
                 $query->whereHas('formOfEducation', function ($query) use ($formOfEducation) {
                     $query->where('slug', $formOfEducation);
                 });
-            });
+            })
+            ->when($districtCode, fn($query) => $query->whereHas('district', fn($query) => $query->where('code', $districtCode)));
     }
 }

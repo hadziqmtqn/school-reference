@@ -4,17 +4,47 @@ namespace App\Http\Controllers;
 
 use App\Exports\SchoolExport;
 use App\Http\Requests\School\ExportRequest;
+use App\Http\Requests\School\SchoolRequest;
 use App\Jobs\CreateSchoolJob;
 use App\Models\City;
 use App\Models\District;
 use App\Models\FormOfEducation;
+use App\Models\School;
+use App\Traits\ApiResponse;
 use Exception;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Facades\Excel;
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Response;
 
 class SchoolController extends Controller
 {
+    use ApiResponse;
+
+    public function index(SchoolRequest $request): JsonResponse
+    {
+        try {
+            $schools = School::with('formOfEducation:id,name')
+                ->filterData($request)
+                ->get();
+        } catch (Exception $exception) {
+            Log::error($exception->getMessage());
+            return $this->apiResponse('Internal server error', null, Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
+
+        return $this->apiResponse('Get data success', $schools->map(function (School $school) {
+            return collect([
+                'npsn' => $school->npsn,
+                'name' => $school->name,
+                'street' => $school->street,
+                'village' => $school->village,
+                'status' => $school->status,
+                'formOfEducation' => optional($school->formOfEducation)->name
+            ]);
+        }), Response::HTTP_OK);
+    }
+
     public function store(City $city)
     {
         try {

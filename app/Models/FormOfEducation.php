@@ -30,8 +30,17 @@ class FormOfEducation extends Model
         });
     }
 
+
+    // TODO Scope
     public function scopeFilterBySlug(Builder $query, $slug): Builder
     {
         return $query->where('slug', $slug);
+    }
+
+    public function scopeFilterData(Builder $query, $request): Builder
+    {
+        $search = $request['search'] ?? null;
+
+        return $query->when($search, fn($query) => $query->whereLike('name', "%$search%"));
     }
 }
