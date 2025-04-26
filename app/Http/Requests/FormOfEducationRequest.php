@@ -13,7 +13,8 @@ class FormOfEducationRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'search' => ['nullable', 'string']
+            'search' => ['nullable', 'string'],
+            'exception_level' => ['nullable', 'array']
         ];
     }
 

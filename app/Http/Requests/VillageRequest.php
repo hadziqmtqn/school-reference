@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Requests\School;
+namespace App\Http\Requests;
 
 use App\Traits\ApiResponse;
 use App\Traits\HandlesValidationFailure;
 use Illuminate\Foundation\Http\FormRequest;
 
-class SchoolRequest extends FormRequest
+class VillageRequest extends FormRequest
 {
     use ApiResponse, HandlesValidationFailure;
 
@@ -14,9 +14,7 @@ class SchoolRequest extends FormRequest
     {
         return [
             'search' => ['nullable', 'string', 'nullable'],
-            'form-of-edu' => ['required', 'string', 'exists:form_of_education,slug'],
-            'district_code' => ['required', 'exists:districts,code'],
-            'village' => ['required', 'string']
+            'district_code' => ['required', 'exists:districts,code']
         ];
     }
 
