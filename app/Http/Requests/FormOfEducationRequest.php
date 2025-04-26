@@ -14,7 +14,7 @@ class FormOfEducationRequest extends FormRequest
     {
         return [
             'search' => ['nullable', 'string'],
-            'exception_level' => ['nullable', 'array']
+            'group_level' => ['nullable', 'array']
         ];
     }
 

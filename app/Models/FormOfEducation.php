@@ -40,9 +40,9 @@ class FormOfEducation extends Model
     public function scopeFilterData(Builder $query, $request): Builder
     {
         $search = $request['search'] ?? null;
-        $exceptionLevel = $request['exception_level'] ?? null;
+        $groupLevel = $request['group_level'] ?? null;
 
         return $query->when($search, fn($query) => $query->whereLike('name', "%$search%"))
-            ->when($exceptionLevel, fn($query) => $query->whereNotIn('name', $exceptionLevel));
+            ->when($groupLevel, fn($query) => $query->whereIn('name', $groupLevel));
     }
 }
