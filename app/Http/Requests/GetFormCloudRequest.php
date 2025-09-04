@@ -17,6 +17,8 @@ class GetFormCloudRequest extends FormRequest
             'province_code' => ['nullable'],
             'city_code' => ['nullable'],
             'district_code' => ['nullable'],
+            'village' => ['nullable'],
+            'form-of-edu' => ['nullable', 'string', 'exists:form_of_education,slug'],
         ];
     }
 
