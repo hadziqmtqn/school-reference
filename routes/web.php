@@ -28,6 +28,7 @@ Route::group(['prefix' => 'district'], function () {
 });
 
 Route::group(['prefix' => 'school'], function () {
+    Route::post('/store', [SchoolController::class, 'createAllSchool'])->name('school.create-all-school');
     Route::post('/{city:code}/store', [SchoolController::class, 'store'])->name('school.store');
     Route::post('/export/data/{district:code}', [SchoolController::class, 'export'])->name('school.export');
 });

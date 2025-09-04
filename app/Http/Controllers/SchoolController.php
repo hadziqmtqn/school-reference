@@ -66,6 +66,32 @@ class SchoolController extends Controller
         }
     }
 
+    public function createAllSchool()
+    {
+        try {
+            $cities = City::with('districts')
+                ->get();
+
+            $formOfEducations = FormOfEducation::with('educationUnit')
+                ->get();
+
+            foreach ($cities as $city) {
+                $districts = $city->districts;
+
+                foreach ($districts as $district) {
+                    foreach ($formOfEducations as $formOfEducation) {
+                        CreateSchoolJob::dispatch($district, $formOfEducation);
+                    }
+                }
+            }
+
+            return redirect()->back()->with('success', 'Data berhasil diproses');
+        } catch (Exception $exception) {
+            Log::error($exception->getMessage());
+            return redirect()->back()->with('error', 'Data gagal disimpan');
+        }
+    }
+
     public function export(ExportRequest $request, District $district)
     {
         try {
