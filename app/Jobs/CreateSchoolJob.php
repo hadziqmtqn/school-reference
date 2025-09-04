@@ -56,6 +56,7 @@ class CreateSchoolJob implements ShouldQueue
                 $status = trim($cols[5]->text());
 
                 $school = School::filterByNpsn($npsn)
+                    ->lockForUpdate()
                     ->firstOrNew();
                 $school->npsn = $npsn;
                 $school->name = $name;

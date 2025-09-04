@@ -51,6 +51,7 @@ class CreateDistrictJob implements ShouldQueue
                 }
 
                 $city = District::filterByCode($code)
+                    ->lockForUpdate()
                     ->firstOrNew();
                 $city->name = $name;
                 $city->code = $code;

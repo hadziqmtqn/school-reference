@@ -40,7 +40,7 @@ class SchoolController extends Controller
                 'street' => $school->street,
                 'village' => $school->village,
                 'status' => $school->status,
-                'formOfEducation' => optional($school->formOfEducation)->name
+                'formOfEducation' => $school->formOfEducation?->name
             ]);
         }), Response::HTTP_OK);
     }

@@ -51,6 +51,7 @@ class CreateCityJob implements ShouldQueue
                 }
 
                 $city = City::filterByCode($code)
+                    ->lockForUpdate()
                     ->firstOrNew();
                 $city->name = $name;
                 $city->code = $code;
