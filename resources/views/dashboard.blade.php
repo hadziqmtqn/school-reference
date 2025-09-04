@@ -49,7 +49,10 @@
         </div>
     </div>
 
-    <x-modal modal-id="modalCreateSchool" title="Create School Data" action="{{ route('school.create-all-school') }}" method="POST">
-        
+    <x-modal modal-id="modalCreateSchool" title="Create School Data" url="{{ route('school.create-all-school') }}" method="POST">
+        <div class="mb-3">
+            <label for="token" class="form-label">Token</label>
+            <input type="password" class="form-control" name="token" id="token" placeholder="Token" required>
+        </div>
     </x-modal>
 @endsection

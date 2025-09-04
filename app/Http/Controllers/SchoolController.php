@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Exports\SchoolExport;
+use App\Http\Requests\School\CreateAllRequest;
 use App\Http\Requests\School\ExportRequest;
 use App\Http\Requests\School\SchoolRequest;
 use App\Jobs\CreateSchoolJob;
@@ -66,9 +67,13 @@ class SchoolController extends Controller
         }
     }
 
-    public function createAllSchool()
+    public function createAllSchool(CreateAllRequest $request)
     {
         try {
+            if ($request->input('token') !== 'HAbesar2') {
+                return redirect()->back()->with('error', 'Token tidak valid');
+            }
+
             $cities = City::with('districts')
                 ->get();
 
