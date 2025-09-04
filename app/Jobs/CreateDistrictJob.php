@@ -32,7 +32,7 @@ class CreateDistrictJob implements ShouldQueue
     public function handle(): void
     {
         $client = new Client();
-        $response = $client->get(config('SourceEndpoint.source_endpoint') . $this->city->code);
+        $response = $client->get(config('kemdikbud.source_endpoint') . '/dikdas/' . $this->city->code);
 
         $html = (string) $response->getBody();
         $document = new Document($html);

@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\EducationUnit;
 use App\Models\FormOfEducation;
 use Illuminate\Database\Seeder;
 use League\Csv\Exception;
@@ -20,9 +21,13 @@ class FormOfEducationSeeder extends Seeder
             ->setHeaderOffset(0);
 
         foreach ($rows as $row) {
+            $educationUnit = EducationUnit::filterByCode($row['education_unit'])
+                ->firstOrFail();
+
             $formOfEducation = new FormOfEducation();
             $formOfEducation->code = $row['code'];
             $formOfEducation->name = $row['name'];
+            $formOfEducation->education_unit_id = $educationUnit->id;
             $formOfEducation->save();
         }
     }

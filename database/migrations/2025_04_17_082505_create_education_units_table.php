@@ -7,20 +7,16 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration {
     public function up(): void
     {
-        Schema::create('form_of_education', function (Blueprint $table) {
+        Schema::create('education_units', function (Blueprint $table) {
             $table->id();
-            $table->uuid('slug');
-            $table->unsignedBigInteger('education_unit_id');
             $table->string('code');
             $table->string('name');
             $table->timestamps();
-
-            $table->foreign('education_unit_id')->references('id')->on('education_units')->restrictOnDelete();
         });
     }
 
     public function down(): void
     {
-        Schema::dropIfExists('form_of_education');
+        Schema::dropIfExists('education_units');
     }
 };

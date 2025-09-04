@@ -46,7 +46,7 @@ class ProvinceController extends Controller
     {
         try {
             $client = new Client();
-            $response = $client->get(config('SourceEndpoint.source_endpoint'));
+            $response = $client->get(config('kemdikbud.source_endpoint') . '/dikdas');
 
             $html = (string) $response->getBody();
             $document = new Document($html);

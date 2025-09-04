@@ -51,8 +51,13 @@ class SchoolController extends Controller
             $districts = District::whereHas('city', fn($query) => $query->filterByCode($city->code))
                 ->get();
 
+            $formOfEducations = FormOfEducation::with('educationUnit')
+                ->get();
+
             foreach ($districts as $district) {
-                CreateSchoolJob::dispatch($district);
+                foreach ($formOfEducations as $formOfEducation) {
+                    CreateSchoolJob::dispatch($district, $formOfEducation);
+                }
             }
             return redirect()->back()->with('success', 'Data berhasil diproses');
         } catch (Exception $exception) {

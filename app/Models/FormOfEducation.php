@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Str;
 
 class FormOfEducation extends Model
@@ -12,6 +13,7 @@ class FormOfEducation extends Model
         'slug',
         'code',
         'name',
+        'education_unit_id'
     ];
 
     protected function casts(): array
@@ -30,6 +32,10 @@ class FormOfEducation extends Model
         });
     }
 
+    public function educationUnit(): BelongsTo
+    {
+        return $this->belongsTo(EducationUnit::class);
+    }
 
     // TODO Scope
     public function scopeFilterBySlug(Builder $query, $slug): Builder

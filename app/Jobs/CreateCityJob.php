@@ -32,7 +32,7 @@ class CreateCityJob implements ShouldQueue
     public function handle(): void
     {
         $client = new Client();
-        $response = $client->get(config('SourceEndpoint.source_endpoint') . $this->province->code);
+        $response = $client->get(config('kemdikbud.source_endpoint') . '/dikdas/' . $this->province->code);
 
         $html = (string) $response->getBody();
         $document = new Document($html);

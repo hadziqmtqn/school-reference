@@ -1,19 +1,32 @@
-code,name
-5,SD
-6,SMP
-9,MI
-10,MTs
-36,SMPTK
-38,SDTK
-53,SPK SD
-54,SPK SMP
-58,Adi W P
-59,Madyama W P
-62,Mula Dhammasekha
-63,Muda Dhammasekha
-67,PDF Ula
-68,PDF Wustha
-70,SPM Ula
-71,SPM Wustha
-74,Adi Widyalaya
-75,Madyama Widyalaya
+code,name,education_unit
+1,TK,paud
+2,KB,paud
+3,TPA,paud
+4,SPS,paud
+34,RA,paud
+41,Taman Seminari,paud
+43,SPK KB,paud
+45,PAUDQ,paud
+51,SPK PG,paud
+52,SPK TK,paud
+57,Pratama W P,paud
+61,Nava Dhammasekha,paud
+73,Pratama Widyalaya,paud
+5,SD,dikdas
+6,SMP,dikdas
+9,MI,dikdas
+10,MTs,dikdas
+36,SMPTK,dikdas
+38,SDTK,dikdas
+53,SPK SD,dikdas
+54,SPK SMP,dikdas
+58,Adi W P,dikdas
+59,Madyama W P,dikdas
+62,Mula Dhammasekha,dikdas
+63,Muda Dhammasekha,dikdas
+67,PDF Ula,dikdas
+68,PDF Wustha,dikdas
+70,SPM Ula,dikdas
+71,SPM Wustha,dikdas
+74,Adi Widyalaya,dikdas
+75,Madyama Widyalaya,dikdas
