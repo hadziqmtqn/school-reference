@@ -7,6 +7,7 @@ use App\Http\Requests\School\CreateAllRequest;
 use App\Http\Requests\School\ExportRequest;
 use App\Http\Requests\School\SchoolRequest;
 use App\Jobs\CreateSchoolJob;
+use App\Jobs\DistrictLoopingJob;
 use App\Models\City;
 use App\Models\District;
 use App\Models\FormOfEducation;
@@ -74,21 +75,7 @@ class SchoolController extends Controller
                 return redirect()->back()->with('error', 'Token tidak valid');
             }
 
-            $cities = City::with('districts')
-                ->get();
-
-            $formOfEducations = FormOfEducation::with('educationUnit')
-                ->get();
-
-            foreach ($cities as $city) {
-                $districts = $city->districts;
-
-                foreach ($districts as $district) {
-                    foreach ($formOfEducations as $formOfEducation) {
-                        CreateSchoolJob::dispatch($district, $formOfEducation);
-                    }
-                }
-            }
+            DistrictLoopingJob::dispatch();
 
             return redirect()->back()->with('success', 'Data berhasil diproses');
         } catch (Exception $exception) {
