@@ -23,6 +23,7 @@ Route::group(['prefix' => 'city'], function () {
 });
 
 Route::group(['prefix' => 'district'], function () {
+    Route::post('/store', [DistrictController::class, 'storeAll'])->name('district.store-all');
     Route::post('/{province:code}/store', [DistrictController::class, 'store'])->name('district.store');
     Route::get('/{district:code}', [DistrictController::class, 'show'])->name('district.show');
 });

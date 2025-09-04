@@ -38,13 +38,22 @@
                 </table>
             </div>
 
-            @if($province->cities->count() > 0)
-                <hr>
-                <form action="{{ route('district.store', $province->code) }}" method="post">
-                    @csrf
-                    <button type="submit" class="btn btn-primary">Generate All Districts Of {{ $province->name }}</button>
-                </form>
-            @endif
+            <hr>
+            <div class="d-flex justify-content-between">
+                @if($province->cities->count() > 0)
+                    <form action="{{ route('district.store', $province->code) }}" method="post">
+                        @csrf
+                        <button type="submit" class="btn btn-primary">Generate All Districts Of {{ $province->name }}</button>
+                    </form>
+                @endif
+
+                <x-modal modal-id="modalCreateDistrict" title="Create School Data" url="{{ route('district.store-all') }}" method="POST">
+                    <div class="mb-3">
+                        <label for="token" class="form-label">Token</label>
+                        <input type="password" class="form-control" name="token" id="token" placeholder="Token" required>
+                    </div>
+                </x-modal>
+            </div>
         </div>
     </div>
 @endsection

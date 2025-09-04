@@ -12,7 +12,7 @@ return new class extends Migration {
             $table->uuid('slug');
             $table->string('code');
             $table->string('name');
-            $table->unsignedInteger('province_id');
+            $table->unsignedBigInteger('province_id');
             $table->string('url')->nullable();
             $table->timestamps();
 
