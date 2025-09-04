@@ -47,13 +47,15 @@
                     </form>
                 @endif
 
-                <x-modal modal-id="modalCreateDistrict" title="Create School Data" url="{{ route('district.store-all') }}" method="POST">
-                    <div class="mb-3">
-                        <label for="token" class="form-label">Token</label>
-                        <input type="password" class="form-control" name="token" id="token" placeholder="Token" required>
-                    </div>
-                </x-modal>
+                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modalCreateDistrict">Create All District</button>
             </div>
         </div>
     </div>
+
+    <x-modal modal-id="modalCreateDistrict" title="Create District Data" url="{{ route('district.store-all') }}" method="POST">
+        <div class="mb-3">
+            <label for="token" class="form-label">Token</label>
+            <input type="password" class="form-control" name="token" id="token" placeholder="Token" required>
+        </div>
+    </x-modal>
 @endsection
