@@ -6,7 +6,6 @@ use App\Http\Requests\FormOfEducationRequest;
 use App\Models\FormOfEducation;
 use App\Traits\ApiResponse;
 use Exception;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
@@ -18,7 +17,9 @@ class FormOfEducationController extends Controller
     public function index(FormOfEducationRequest $request): JsonResponse
     {
         try {
-            $formOfEducations = FormOfEducation::filterData($request)
+            $formOfEducations = FormOfEducation::query()
+                ->with('educationUnit:id,code,name')
+                ->filterData($request)
                 ->get();
         } catch (Exception $exception) {
             Log::error($exception->getMessage());
@@ -28,7 +29,8 @@ class FormOfEducationController extends Controller
         return $this->apiResponse('Get data success', $formOfEducations->map(function (FormOfEducation $formOfEducation) {
             return collect([
                 'slug' => $formOfEducation->slug,
-                'name' => $formOfEducation->name
+                'name' => $formOfEducation->name,
+                'educationUnit' => $formOfEducation->educationUnit?->code,
             ]);
         }), Response::HTTP_OK);
     }
