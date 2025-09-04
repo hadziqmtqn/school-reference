@@ -35,13 +35,21 @@
                 </table>
             </div>
 
-            @if($provinces->count() > 0)
-                <hr>
-                <form action="{{ route('city.store') }}" method="post">
-                    @csrf
-                    <button type="submit" class="btn btn-primary">Generate Cities</button>
-                </form>
-            @endif
+            <hr>
+            <div class="d-flex justify-content-between">
+                @if($provinces->count() > 0)
+                    <form action="{{ route('city.store') }}" method="post">
+                        @csrf
+                        <button type="submit" class="btn btn-primary">Generate Cities</button>
+                    </form>
+                @endif
+
+                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modalCreateSchool">Create School</button>
+            </div>
         </div>
     </div>
+
+    <x-modal modal-id="modalCreateSchool" title="Create School Data" action="{{ route('school.create-all-school') }}" method="POST">
+        
+    </x-modal>
 @endsection
