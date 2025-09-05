@@ -9,7 +9,10 @@
     </nav>
 
     <div class="card">
-        <h5 class="card-header">District</h5>
+        <div class="card-header d-flex justify-content-between">
+            <h5>Districts</h5>
+            <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modalCreate">Generate All Districs</button>
+        </div>
         <div class="card-body">
             @include('session')
             <div class="table-responsive">
@@ -39,13 +42,24 @@
                 </table>
             </div>
 
-            @if($city->districts->count() > 0)
-                <hr>
-                <form action="{{ route('school.store', $city->code) }}" method="post">
+            <hr>
+            <div class="d-flex justify-content-between">
+                <form action="{{ route('district.generate-by-city', $city->code) }}" method="post">
                     @csrf
-                    <button type="submit" class="btn btn-primary">Generate All Schools Of {{ $city->name }}</button>
+                    <button type="submit" class="btn btn-primary">Generate All Districts Of {{ $city->name }}</button>
                 </form>
-            @endif
+
+                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modalGenerateByCity">Create All Schools</button>
+            </div>
         </div>
     </div>
+
+    <x-modal modal-id="modalCreate" title="Create All Districts" url="{{ route('district.store') }}" method="POST">
+        <div class="mb-3">
+            <label for="token" class="form-label">Token</label>
+            <input type="password" class="form-control" name="token" id="token" placeholder="Token" required>
+        </div>
+    </x-modal>
+
+    <x-modal modal-id="modalGenerateByCity" title="Create School Data" url="{{ route('generate-school-data.city', $city->code) }}" method="POST"></x-modal>
 @endsection

@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\CityRequest;
-use App\Jobs\CreateCityJob;
+use App\Http\Requests\School\CreateAllRequest;
 use App\Models\City;
 use App\Models\Province;
+use App\Services\GenerateCityDataService;
 use App\Traits\ApiResponse;
 use Exception;
 use Illuminate\Support\Facades\Log;
@@ -16,6 +17,16 @@ use Symfony\Component\HttpFoundation\Response;
 class CityController extends Controller
 {
     use ApiResponse;
+
+    protected GenerateCityDataService $generateCityDataService;
+
+    /**
+     * @param GenerateCityDataService $generateCityDataService
+     */
+    public function __construct(GenerateCityDataService $generateCityDataService)
+    {
+        $this->generateCityDataService = $generateCityDataService;
+    }
 
     public function index(CityRequest $request): JsonResponse
     {
@@ -35,19 +46,14 @@ class CityController extends Controller
         }), Response::HTTP_OK);
     }
 
-    public function store()
+    public function store(CreateAllRequest $request)
     {
-        try {
-            $provinces = Province::get();
+        return $this->generateCityDataService->createByAll($request);
+    }
 
-            foreach ($provinces as $province) {
-                CreateCityJob::dispatch($province);
-            }
-            return redirect()->back()->with('success', 'Data berhasil diproses');
-        } catch (Exception $exception) {
-            Log::error($exception->getMessage());
-            return redirect()->back()->with('error', 'Data gagal disimpan');
-        }
+    public function generateByProvince(Province $province)
+    {
+        return $this->generateCityDataService->createByProvince($province);
     }
 
     public function show(City $city): View

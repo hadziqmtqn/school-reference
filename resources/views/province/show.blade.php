@@ -8,7 +8,10 @@
     </nav>
 
     <div class="card">
-        <h5 class="card-header">City</h5>
+        <div class="d-flex justify-content-between">
+            <h5>Province</h5>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalCreate">Create All Cities</button>
+        </div>
         <div class="card-body">
             @include('session')
             <div class="table-responsive">
@@ -40,22 +43,22 @@
 
             <hr>
             <div class="d-flex justify-content-between">
-                @if($province->cities->count() > 0)
-                    <form action="{{ route('district.store', $province->code) }}" method="post">
-                        @csrf
-                        <button type="submit" class="btn btn-primary">Generate All Districts Of {{ $province->name }}</button>
-                    </form>
-                @endif
+                <form action="{{ route('city.store', $province->code) }}" method="post">
+                    @csrf
+                    <button type="submit" class="btn btn-primary">Generate All Cities Of {{ $province->name }}</button>
+                </form>
 
-                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modalCreateDistrict">Create All District</button>
+                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modalGenerateByProvince">Create All Schools</button>
             </div>
         </div>
     </div>
 
-    <x-modal modal-id="modalCreateDistrict" title="Create District Data" url="{{ route('district.store-all') }}" method="POST">
+    <x-modal modal-id="modalCreate" title="Create City Data" url="{{ route('city.store') }}" method="POST">
         <div class="mb-3">
             <label for="token" class="form-label">Token</label>
             <input type="password" class="form-control" name="token" id="token" placeholder="Token" required>
         </div>
     </x-modal>
+
+    <x-modal modal-id="modalGenerateByProvince" title="Create School Data" url="{{ route('generate-school-data.province', $province->code) }}" method="POST"></x-modal>
 @endsection

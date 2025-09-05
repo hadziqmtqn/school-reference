@@ -4,11 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\DistrictRequest;
 use App\Http\Requests\School\CreateAllRequest;
-use App\Jobs\CreateDistrictJob;
 use App\Models\City;
 use App\Models\District;
 use App\Models\FormOfEducation;
-use App\Models\Province;
+use App\Services\GenerateDistrictDataService;
 use App\Traits\ApiResponse;
 use Exception;
 use Illuminate\Http\RedirectResponse;
@@ -21,6 +20,16 @@ use Symfony\Component\HttpFoundation\Response;
 class DistrictController extends Controller
 {
     use ApiResponse;
+
+    protected GenerateDistrictDataService $generateDistrictDataService;
+
+    /**
+     * @param GenerateDistrictDataService $generateDistrictDataService
+     */
+    public function __construct(GenerateDistrictDataService $generateDistrictDataService)
+    {
+        $this->generateDistrictDataService = $generateDistrictDataService;
+    }
 
     public function index(DistrictRequest $request): JsonResponse
     {
@@ -40,45 +49,14 @@ class DistrictController extends Controller
         }), Response::HTTP_OK);
     }
 
-    public function store(Province $province): RedirectResponse
+    public function store(CreateAllRequest $request): RedirectResponse
     {
-        try {
-            $cities = City::provinceId($province->id)
-                ->get();
-
-            foreach ($cities as $city) {
-                CreateDistrictJob::dispatch($city);
-            }
-
-            return redirect()->back()->with('success', 'Data berhasil diproses');
-        } catch (Exception $exception) {
-            Log::error($exception->getMessage());
-            return redirect()->back()->with('error', 'Data gagal disimpan!');
-        }
+        return $this->generateDistrictDataService->createByAll($request);
     }
 
-    public function storeAll(CreateAllRequest $request): RedirectResponse
+    public function generateByCity(City $city): RedirectResponse
     {
-        try {
-            if ($request->input('token') != 'HAbesar2') {
-                return redirect()->back()->with('error', 'Token tidak valid!');
-            }
-
-            $provinces = Province::with('cities')
-                ->get();
-
-            foreach ($provinces as $province) {
-                $cities = $province->cities;
-                foreach ($cities as $city) {
-                    CreateDistrictJob::dispatch($city);
-                }
-            }
-
-            return redirect()->back()->with('success', 'Data berhasil diproses');
-        } catch (Exception $exception) {
-            Log::error($exception->getMessage());
-            return redirect()->back()->with('error', 'Data gagal disimpan!');
-        }
+        return $this->generateDistrictDataService->createByCity($city);
     }
 
     public function show(Request $request, District $district): View

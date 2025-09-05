@@ -3,12 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Exports\SchoolExport;
-use App\Http\Requests\School\CreateAllRequest;
 use App\Http\Requests\School\ExportRequest;
 use App\Http\Requests\School\SchoolRequest;
-use App\Jobs\CreateSchoolJob;
-use App\Jobs\DistrictLoopingJob;
-use App\Models\City;
 use App\Models\District;
 use App\Models\FormOfEducation;
 use App\Models\School;
@@ -45,43 +41,6 @@ class SchoolController extends Controller
                 'formOfEducation' => $school->formOfEducation?->name
             ]);
         }), Response::HTTP_OK);
-    }
-
-    public function store(City $city)
-    {
-        try {
-            $districts = District::whereHas('city', fn($query) => $query->filterByCode($city->code))
-                ->get();
-
-            $formOfEducations = FormOfEducation::with('educationUnit')
-                ->get();
-
-            foreach ($districts as $district) {
-                foreach ($formOfEducations as $formOfEducation) {
-                    CreateSchoolJob::dispatch($district, $formOfEducation);
-                }
-            }
-            return redirect()->back()->with('success', 'Data berhasil diproses');
-        } catch (Exception $exception) {
-            Log::error($exception->getMessage());
-            return redirect()->back()->with('error', 'Data gagal disimpan');
-        }
-    }
-
-    public function createAllSchool(CreateAllRequest $request)
-    {
-        try {
-            if ($request->input('token') !== 'HAbesar2') {
-                return redirect()->back()->with('error', 'Token tidak valid');
-            }
-
-            DistrictLoopingJob::dispatch();
-
-            return redirect()->back()->with('success', 'Data berhasil diproses');
-        } catch (Exception $exception) {
-            Log::error($exception->getMessage());
-            return redirect()->back()->with('error', 'Data gagal disimpan');
-        }
     }
 
     public function export(ExportRequest $request, District $district)

@@ -36,20 +36,18 @@
             </div>
 
             <hr>
-            <div class="d-flex justify-content-between">
-                @if($provinces->count() > 0)
-                    <form action="{{ route('city.store') }}" method="post">
-                        @csrf
-                        <button type="submit" class="btn btn-primary">Generate Cities</button>
-                    </form>
-                @endif
-
-                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modalCreateSchool">Create School</button>
-            </div>
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#modalCreateSchool">Create All Schools</button>
         </div>
     </div>
 
-    <x-modal modal-id="modalCreateSchool" title="Create School Data" url="{{ route('school.create-all-school') }}" method="POST">
+    <x-modal modal-id="modalCreateAllCity" title="Create Cities Data" url="{{ route('city.store') }}" method="POST">
+        <div class="mb-3">
+            <label for="token" class="form-label">Token</label>
+            <input type="password" class="form-control" name="token" id="token" placeholder="Token" required>
+        </div>
+    </x-modal>
+
+    <x-modal modal-id="modalCreateSchool" title="Create School Data" url="{{ route('generate-school-data.school') }}" method="POST">
         <div class="mb-3">
             <label for="token" class="form-label">Token</label>
             <input type="password" class="form-control" name="token" id="token" placeholder="Token" required>
