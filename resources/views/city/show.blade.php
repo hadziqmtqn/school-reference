@@ -11,7 +11,7 @@
     <div class="card">
         <div class="card-header d-flex justify-content-between">
             <h5>Districts</h5>
-            <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modalCreate">Generate All Districs</button>
+            <button type="button" class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#modalCreate">Generate All Districs</button>
         </div>
         <div class="card-body">
             @include('session')

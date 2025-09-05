@@ -8,7 +8,7 @@
     </nav>
 
     <div class="card">
-        <div class="d-flex justify-content-between">
+        <div class="card-header d-flex justify-content-between">
             <h5>Province</h5>
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalCreate">Create All Cities</button>
         </div>
