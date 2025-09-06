@@ -61,5 +61,10 @@
         </div>
     </x-modal>
 
-    <x-modal modal-id="modalGenerateByCity" title="Create School Data" url="{{ route('generate-school-data.city', $city->code) }}" method="POST"></x-modal>
+    <x-modal modal-id="modalGenerateByCity" title="Create School Data" url="{{ route('generate-school-data.city', $city->code) }}" method="POST">
+        <div class="mb-3">
+            <label for="token" class="form-label">Token</label>
+            <input type="password" class="form-control" name="token" id="token" placeholder="Token" required>
+        </div>
+    </x-modal>
 @endsection
