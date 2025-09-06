@@ -3,8 +3,8 @@
 namespace App\Services;
 
 use App\Http\Requests\School\CreateAllRequest;
-use App\Jobs\CreateSchoolJob;
-use App\Jobs\DistrictLoopingJob;
+use App\Jobs\GenerateSchools\CreateSchoolJob;
+use App\Jobs\GenerateSchools\GenerateSchoolsForProvinceJob;
 use App\Models\City;
 use App\Models\FormOfEducation;
 use App\Models\Province;
@@ -19,20 +19,7 @@ class GenerateSchoolDataService
         try {
             $province->loadMissing('cities.districts');
 
-            $cities = $province->cities;
-
-            $formOfEducations = FormOfEducation::with('educationUnit')
-                ->get();
-
-            foreach ($cities as $city) {
-                $districts = $city->districts;
-
-                foreach ($districts as $district) {
-                    foreach ($formOfEducations as $formOfEducation) {
-                        CreateSchoolJob::dispatch($district, $formOfEducation);
-                    }
-                }
-            }
+            GenerateSchoolsForProvinceJob::dispatch($province->id);
 
             return redirect()->back()->with('success', 'Data berhasil diproses');
         } catch (Exception $exception) {
@@ -70,7 +57,7 @@ class GenerateSchoolDataService
                 return redirect()->back()->with('error', 'Token tidak valid');
             }
 
-            DistrictLoopingJob::dispatch();
+            GenerateSchoolsForProvinceJob::dispatch();
 
             return redirect()->back()->with('success', 'Data berhasil diproses');
         } catch (Exception $exception) {

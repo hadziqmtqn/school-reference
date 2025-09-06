@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands;
 
-use App\Jobs\CreateDistrictJob;
+use App\Jobs\GenerateLocation\CreateDistrictJob;
 use App\Models\City;
 use Illuminate\Console\Command;
 

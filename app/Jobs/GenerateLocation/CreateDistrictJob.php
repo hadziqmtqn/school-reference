@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Jobs;
+namespace App\Jobs\GenerateLocation;
 
 use App\Models\City;
-use App\Models\Province;
+use App\Models\District;
 use DiDom\Document;
 use DiDom\Exceptions\InvalidSelectorException;
 use GuzzleHttp\Client;
@@ -14,15 +14,15 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 
-class CreateCityJob implements ShouldQueue
+class CreateDistrictJob implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-    protected Province $province;
+    protected City $city;
 
-    public function __construct(Province $province)
+    public function __construct(City $city)
     {
-        $this->province = $province;
+        $this->city = $city;
     }
 
     /**
@@ -32,7 +32,7 @@ class CreateCityJob implements ShouldQueue
     public function handle(): void
     {
         $client = new Client();
-        $response = $client->get(config('kemdikbud.source_endpoint') . '/dikdas/' . $this->province->code);
+        $response = $client->get(config('kemdikbud.source_endpoint') . '/dikdas/' . $this->city->code);
 
         $html = (string) $response->getBody();
         $document = new Document($html);
@@ -50,12 +50,12 @@ class CreateCityJob implements ShouldQueue
                     $code = $matches[1];
                 }
 
-                $city = City::filterByCode($code)
+                $city = District::filterByCode($code)
                     ->lockForUpdate()
                     ->firstOrNew();
                 $city->name = $name;
                 $city->code = $code;
-                $city->province_id = $this->province->id;
+                $city->city_id = $this->city->id;
                 $city->url = $href;
                 $city->save();
             }

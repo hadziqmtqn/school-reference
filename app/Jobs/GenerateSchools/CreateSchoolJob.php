@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Jobs;
+namespace App\Jobs\GenerateSchools;
 
 use App\Models\District;
 use App\Models\FormOfEducation;

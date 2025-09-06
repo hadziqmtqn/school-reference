@@ -3,7 +3,8 @@
 namespace App\Services;
 
 use App\Http\Requests\School\CreateAllRequest;
-use App\Jobs\CreateCityJob;
+use App\Jobs\GenerateLocation\CreateCityJob;
+use App\Jobs\GenerateLocation\GenerateCitiesForProvincesJob;
 use App\Models\Province;
 use Exception;
 use Illuminate\Http\RedirectResponse;
@@ -29,11 +30,7 @@ class GenerateCityDataService
                 return redirect()->back()->with('error', 'Token tidak valid');
             }
 
-            $provinces = Province::get();
-
-            foreach ($provinces as $province) {
-                CreateCityJob::dispatch($province);
-            }
+            GenerateCitiesForProvincesJob::dispatch();
             return redirect()->back()->with('success', 'Data berhasil diproses');
         } catch (Exception $exception) {
             Log::error($exception->getMessage());

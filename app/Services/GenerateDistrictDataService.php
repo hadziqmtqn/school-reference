@@ -3,7 +3,8 @@
 namespace App\Services;
 
 use App\Http\Requests\School\CreateAllRequest;
-use App\Jobs\CreateDistrictJob;
+use App\Jobs\GenerateLocation\CreateDistrictJob;
+use App\Jobs\GenerateLocation\GenerateDistrictsForCitiesJob;
 use App\Models\City;
 use Exception;
 use Illuminate\Http\RedirectResponse;
@@ -29,11 +30,8 @@ class GenerateDistrictDataService
                 return redirect()->back()->with('error', 'Token tidak valid');
             }
 
-            $cities = City::all();
+            GenerateDistrictsForCitiesJob::dispatch();
 
-            foreach ($cities as $city) {
-                CreateDistrictJob::dispatch($city);
-            }
             return redirect()->back()->with('success', 'Data berhasil diproses');
         } catch (Exception $exception) {
             Log::error($exception->getMessage());
