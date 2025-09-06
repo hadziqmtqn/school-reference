@@ -6,7 +6,6 @@ use App\Http\Requests\School\CreateAllRequest;
 use App\Jobs\CreateSchoolJob;
 use App\Jobs\DistrictLoopingJob;
 use App\Models\City;
-use App\Models\District;
 use App\Models\FormOfEducation;
 use App\Models\Province;
 use Exception;
