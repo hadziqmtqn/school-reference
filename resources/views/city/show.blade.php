@@ -32,7 +32,7 @@
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $district->name }}</td>
                             <td>{{ $district->code }}</td>
-                            <td>{{ $district->totalSchools() }}</td>
+                            <td>{{ $district->total_school }}</td>
                             <td>
                                 <a href="{{ route('district.show', $district->code) }}" class="btn btn-sm btn-secondary">Show</a>
                             </td>
