@@ -19,9 +19,7 @@ class GenerateDistrictsForCitiesJob implements ShouldQueue
 
     public function handle(): void
     {
-        $cities = City::query();
-
-        $cities->chunk(100, function ($cities) {
+        City::chunk(100, function ($cities) {
             foreach ($cities as $city) {
                 CreateDistrictJob::dispatch($city);
             }

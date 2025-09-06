@@ -19,14 +19,14 @@ class GenerateSchoolDataController extends Controller
         $this->generateSchoolDataService = $generateSchoolDataService;
     }
 
-    public function generateByProvince(Province $province)
+    public function generateByProvince(CreateAllRequest $request, Province $province)
     {
-        return $this->generateSchoolDataService->generateByProvince($province);
+        return $this->generateSchoolDataService->generateByProvince($request, $province);
     }
 
-    public function generateByCity(City $city)
+    public function generateByCity(CreateAllRequest $request, City $city)
     {
-        return $this->generateSchoolDataService->generateByCity($city);
+        return $this->generateSchoolDataService->generateByCity($request, $city);
     }
 
     public function createAllSchool(CreateAllRequest $request)

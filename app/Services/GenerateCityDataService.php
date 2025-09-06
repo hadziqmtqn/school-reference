@@ -31,6 +31,7 @@ class GenerateCityDataService
             }
 
             GenerateCitiesForProvincesJob::dispatch();
+
             return redirect()->back()->with('success', 'Data berhasil diproses');
         } catch (Exception $exception) {
             Log::error($exception->getMessage());
