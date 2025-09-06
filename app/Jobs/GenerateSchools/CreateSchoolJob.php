@@ -55,9 +55,11 @@ class CreateSchoolJob implements ShouldQueue
                 $village = trim($cols[4]->text());
                 $status = trim($cols[5]->text());
 
-                $school = School::filterByNpsn($npsn)
-                    ->lockForUpdate()
-                    ->firstOrNew();
+                if (School::where('npsn', $npsn)->exists()) {
+                    continue; // Skip data
+                }
+
+                $school = new School();
                 $school->npsn = $npsn;
                 $school->name = $name;
                 $school->district_id = $this->district->id;
