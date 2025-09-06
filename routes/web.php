@@ -36,7 +36,7 @@ Route::group(['prefix' => 'school'], function () {
 });
 
 Route::prefix('generate-school-data')->group(function () {
-    Route::post('{province:code}', [GenerateSchoolDataController::class, 'generateByProvince'])->name('generate-school-data.province');
-    Route::post('{city:code}', [GenerateSchoolDataController::class, 'generateByCity'])->name('generate-school-data.city');
+    Route::post('{province:code}/province', [GenerateSchoolDataController::class, 'generateByProvince'])->name('generate-school-data.province');
+    Route::post('{city:code}/city', [GenerateSchoolDataController::class, 'generateByCity'])->name('generate-school-data.city');
     Route::post('create-all-school', [GenerateSchoolDataController::class, 'createAllSchool'])->name('generate-school-data.school');
 });
