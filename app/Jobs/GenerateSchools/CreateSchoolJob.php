@@ -59,15 +59,15 @@ class CreateSchoolJob implements ShouldQueue
                     continue; // Skip data
                 }
 
-                $school = new School();
-                $school->npsn = $npsn;
-                $school->name = $name;
-                $school->district_id = $this->district->id;
-                $school->form_of_education_id = $this->formOfEducation->id;
-                $school->street = $street;
-                $school->village = $village;
-                $school->status = $status;
-                $school->save();
+                SaveSchoolJob::dispatch([
+                    'npsn' => $npsn,
+                    'name' => $name,
+                    'district' => $this->district->id,
+                    'formOfEducation' => $this->formOfEducation->id,
+                    'street' => $street,
+                    'village' => $village,
+                    'status' => $status,
+                ]);
             }
         }
     }
