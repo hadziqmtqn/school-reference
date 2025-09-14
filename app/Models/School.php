@@ -60,7 +60,8 @@ class School extends Model
         $village = $request['village'] ?? null;
 
         return $query->when($search, function ($query) use ($search) {
-            $query->whereAny(['name', 'npsn', 'village'], 'LIKE', '%' . $search . '%');
+            $query->whereLike('name', '%' . $search . '%');
+            $query->orWhereLike('npsn', '%' . $search . '%');
         })
             ->when($formOfEducation && ($formOfEducation != 'all'), function ($query) use ($formOfEducation) {
                 $query->whereHas('formOfEducation', function ($query) use ($formOfEducation) {
