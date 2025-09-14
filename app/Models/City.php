@@ -58,8 +58,12 @@ class City extends Model
     public function scopeFilterData(Builder $query, $request): Builder
     {
         $search = $request['search'] ?? null;
+        $code = $request['code'] ?? null;
 
-        return $query->when($search, fn($query) => $query->whereLike('name', "%$search%"))
-            ->whereHas('province', fn($query) => $query->where('code', $request['province_code']));
+        $query->when($search, fn($query) => $query->whereLike('name', '%' . $search . '%'));
+        $query->when($code, fn($query) => $query->where('code', $code));
+        $query->whereHas('province', fn($query) => $query->where('code', $request['province_code']));
+
+        return $query;
     }
 }

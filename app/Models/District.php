@@ -62,8 +62,12 @@ class District extends Model
     public function scopeFilterData(Builder $query, $request): Builder
     {
         $search = $request['search'] ?? null;
+        $code = $request['code'] ?? null;
 
-        return $query->when($search, fn($query) => $query->whereLike('name', "%$search%"))
-            ->whereHas('city', fn($query) => $query->where('code', $request['city_code']));
+        $query->when($search, fn($query) => $query->whereLike('name', '%' . $search . '%'));
+        $query->when($code, fn($query) => $query->where('code', $code));
+        $query->whereHas('city', fn($query) => $query->where('code', $request['city_code']));
+
+        return $query;
     }
 }

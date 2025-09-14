@@ -46,7 +46,11 @@ class Province extends Model
     public function scopeFilterData(Builder $query, $request): Builder
     {
         $search = $request['search'] ?? null;
+        $code = $request['code'] ?? null;
 
-        return $query->when($search, fn($query) => $query->whereLike('name', "%$search%"));
+        $query->when($search, fn($query) => $query->whereLike('name', '%' . $search . '%'));
+        $query->when($code, fn($query) => $query->where('code', $code));
+
+        return $query;
     }
 }
