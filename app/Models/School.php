@@ -57,12 +57,13 @@ class School extends Model
         $search = $request['search'] ?? null;
         $formOfEducation = $request['form-of-edu'] ?? null;
         $districtCode = $request['district_code'] ?? null;
+        $npsn = $request['npsn'] ?? null;
         $village = $request['village'] ?? null;
 
         return $query->when($search, function ($query) use ($search) {
             $query->whereLike('name', '%' . $search . '%');
-            $query->orWhereLike('npsn', '%' . $search . '%');
         })
+            ->when($npsn, fn ($query) => $query->where('npsn', $npsn))
             ->when($formOfEducation && ($formOfEducation != 'all'), function ($query) use ($formOfEducation) {
                 $query->whereHas('formOfEducation', function ($query) use ($formOfEducation) {
                     $query->where('slug', $formOfEducation);
